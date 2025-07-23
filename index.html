@@ -2,66 +2,114 @@
 <html lang="tl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BuCor Action Center</title>
   <style>
     body {
-      background: linear-gradient(to bottom, #e6ffe6, #ffffff);
       font-family: Arial, sans-serif;
-      padding: 20px;
+      background: linear-gradient(to bottom right, #e6ffe6, #ffffff);
+      color: #003300;
       margin: 0;
-      background-image: url('bucor-logo.png');
-      background-size: 600px auto;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
+      padding: 0;
     }
 
-    .header {
+    header {
+      background-color: #006600;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .notice {
+      background-color: #ffcccc;
+      color: #660000;
+      text-align: center;
+      font-weight: bold;
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+    }
+
+    .sidebar {
+      width: 30%;
+      padding-right: 20px;
+    }
+
+    .sidebar h3 {
+      color: #004d00;
+    }
+
+    .form-container {
+      width: 70%;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1600px;
+      border: none;
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      color: #333;
       text-align: center;
       padding: 10px;
-      background-color: #006400;
-      color: white;
-      border-radius: 10px;
-    }
-
-    .warning {
-      color: red;
-      font-weight: bold;
-      text-align: center;
-      margin: 15px 0;
+      font-size: 14px;
+      margin-top: 20px;
     }
 
     .contact {
       text-align: center;
-      margin-bottom: 20px;
-      font-weight: bold;
-      font-size: 1.1rem;
+      margin-top: 10px;
+      font-size: 18px;
     }
 
-    iframe {
-      display: block;
-      margin: 0 auto;
-      border: none;
-    }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <h1>ANG IYONG SUMBONG AY MAY AKSYON</h1>
-    <h2>BuCor Action Center</h2>
+<header>
+  <h1>ANG IYONG SUMBONG AY MAY AKSYON</h1>
+</header>
+
+<div class="notice">
+  Babala: Ang sinumang magbibigay ng maling impormasyon ay maaaring managot ayon sa batas.
+</div>
+
+<div class="contact">
+  📞 Tawag o Text para sa agarang aksyon: <strong>091234567890</strong>
+</div>
+
+<div class="container">
+  <div class="sidebar">
+    <h3>Gabay sa Pagsagot:</h3>
+    <ul>
+      <li>Ibigay ang kompletong detalye ng insidente.</li>
+      <li>Maging tapat at maingat sa pagbibigay ng impormasyon.</li>
+      <li>Ilagay ang tamang petsa, lugar, at pangalan kung meron.</li>
+      <li>Pwedeng ilakip ang karagdagang detalye sa "Other" section.</li>
+      <li>Siguraduhing totoo ang iyong reklamo upang may aksyon.</li>
+    </ul>
   </div>
 
-  <div class="warning">
-    ⚠️ Lahat ng magsisinungaling o gagawa ng kwento ay maaaring makasuhan ayon sa batas.
+  <div class="form-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoZafQ2NOvHLzt1mZG1Zqyu20YgsqUHpmlmfbfp8GiFvyI9g/viewform?embedded=true">Loading…</iframe>
   </div>
+</div>
 
-  <div class="contact">
-    Kung ayaw mong mag-fill out ng form, maaari kang magtext o tumawag sa <br>
-    📞 <strong>091234567890</strong> lalo na kung emergency ang reklamo.
-  </div>
-
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoZafQ2NOvHLzt1mZG1Zqyu20YgsqUHpmlmfbfp8GiFvyI9g/viewform?embedded=true" width="640" height="1548" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<footer>
+  BuCor Action Center &copy; 2025
+</footer>
 
 </body>
 </html>
