@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang="tl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BuCor Action Center</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuCor Action Center</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #e6f5e6; /* Green-white background */
+      color: #003300;
+    }
+
+    header {
+      background-color: #006600;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 1600px;
+      border: none;
+    }
+
+    footer {
+      background-color: #003300;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>BuCor Action Center</h1>
-        <p>Isumbong ang inyong mga concern tungkol sa BuCor</p>
-    </header>
+  <header>
+    <h1>BuCor Action Center</h1>
+    <p>Isumbong ang inyong mga concern o reklamo dito</p>
+  </header>
 
-    <section class="form-section">
-        <h2>Ipadala ang Inyong Reklamo</h2>
-        <form>
-            <label for="name">Pangalan:</label>
-            <input type="text" id="name" name="name" required>
+  <!-- Embedded Google Form -->
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoZafQ2NOvHLzt1mZG1Zqyu20YgsqUHpmlmfbfp8GiFvyI9g/viewform?embedded=true" allowfullscreen></iframe>
 
-            <label for="email">Email (Opsyonal):</label>
-            <input type="email" id="email" name="email">
-
-            <label for="complaint">Reklamo / Feedback:</label>
-            <textarea id="complaint" name="complaint" rows="5" required></textarea>
-
-            <button type="submit">Isumite</button>
-        </form>
-    </section>
-
-    <section class="info-section">
-        <h2>Mission</h2>
-        <p>To protect the public by safekeeping and reforming persons deprived of liberty.</p>
-
-        <h2>Vision</h2>
-        <p>A modernized and credible institution composed of highly trained and motivated personnel implementing humane safekeeping and development programs for persons deprived of liberty for their reintegration into society.</p>
-
-        <h2>Core Values</h2>
-        <ul>
-            <li>Integrity</li>
-            <li>Professionalism</li>
-            <li>Teamwork</li>
-            <li>Respect for Human Rights</li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 BuCor Action Center</p>
-    </footer>
+  <footer>
+    &copy; 2025 BuCor Action Center. Lahat ng karapatan ay nakalaan.
+  </footer>
 </body>
 </html>
