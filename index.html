@@ -1,73 +1,51 @@
 <!DOCTYPE html>
 <html lang="tl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BuCor Action Center</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuCor Action Center</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <h1>BuCor Action Center</h1>
-    <p class="tagline">Isumbong nang direkta ang inyong mga concern sa Bureau of Corrections</p>
-  </header>
+    <header>
+        <h1>BuCor Action Center</h1>
+        <p>Isumbong ang inyong mga concern tungkol sa BuCor</p>
+    </header>
 
-  <!-- Mission ‑ Vision ‑ Core Values -->
-  <section class="mv-section">
-    <h2>Vision</h2>
-    <p>
-      “By 2040, BuCor will be a highly efficient and competent correctional service
-      institution that is relevant, sustainable and respected which provides effective
-      safekeeping and holistic reformation programs, in observance of domestic and
-      international standards.”
-    </p>
+    <section class="form-section">
+        <h2>Ipadala ang Inyong Reklamo</h2>
+        <form>
+            <label for="name">Pangalan:</label>
+            <input type="text" id="name" name="name" required>
 
-    <h2>Mission</h2>
-    <p>
-      “To contribute for the protection of the society through effective safekeeping
-      measures and implementation of holistic reformation programs to PDL, thereby
-      enabling them to reintegrate into the mainstream society as law‑abiding citizens.”
-    </p>
+            <label for="email">Email (Opsyonal):</label>
+            <input type="email" id="email" name="email">
 
-    <h2>Core Values</h2>
-    <ul class="core-values">
-      <li><strong>God‑Centered –</strong> Center our lives joyfully and dynamically upon the person of God.</li>
-      <li><strong>Integrity –</strong> Promote accountability, equity, and inclusiveness by adhering to high ethical and moral standards.</li>
-      <li><strong>Vigilance –</strong> Enhance public safety by being responsive to the extreme demands of corrections duties.</li>
-      <li><strong>Innovativeness –</strong> Seek continuing advancement in corrections management and embrace technological advances to face emerging challenges and optimize resources.</li>
-    </ul>
-  </section>
+            <label for="complaint">Reklamo / Feedback:</label>
+            <textarea id="complaint" name="complaint" rows="5" required></textarea>
 
-  <!-- Feedback / Reklamo form -->
-  <main class="form-wrapper">
-    <h2>I‑submit ang Iyong Reklamo</h2>
+            <button type="submit">Isumite</button>
+        </form>
+    </section>
 
-    <!-- ❶  Replace the action URL with your actual Formspree or backend endpoint -->
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <label>Pangalan</label>
-      <input type="text" name="pangalan" required />
+    <section class="info-section">
+        <h2>Mission</h2>
+        <p>To protect the public by safekeeping and reforming persons deprived of liberty.</p>
 
-      <label>Email (required)</label>
-      <input type="email" name="email" required />
+        <h2>Vision</h2>
+        <p>A modernized and credible institution composed of highly trained and motivated personnel implementing humane safekeeping and development programs for persons deprived of liberty for their reintegration into society.</p>
 
-      <label>Kategorya</label>
-      <select name="kategorya" required>
-        <option value="">— Piliin —</option>
-        <option>Pangaabuso</option>
-        <option>Korapsyon</option>
-        <option>Kalusugan</option>
-        <option>Iba pa</option>
-      </select>
+        <h2>Core Values</h2>
+        <ul>
+            <li>Integrity</li>
+            <li>Professionalism</li>
+            <li>Teamwork</li>
+            <li>Respect for Human Rights</li>
+        </ul>
+    </section>
 
-      <label>Detalye ng Reklamo</label>
-      <textarea name="detalye" rows="5" required></textarea>
-
-      <button type="submit">Isumite</button>
-    </form>
-  </main>
-
-  <footer class="site-footer">
-    &copy; 2025 Bureau of Corrections • All rights reserved
-  </footer>
+    <footer>
+        <p>&copy; 2025 BuCor Action Center</p>
+    </footer>
 </body>
 </html>
