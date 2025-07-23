@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuCor Action Center</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-overlay">
+    <img src="mandela.jpg" class="bg-mandela" alt="Nelson Mandela" />
+  </div>
+
+  <header>
+    <img src="bucor-logo.png" alt="BuCor Logo" class="logo" />
+    <h1>BuCor Action Center</h1>
+    <p>Isumbong ang inyong mga concern tungkol sa BuCor</p>
+  </header>
+
+  <section class="mission-section">
+    <h2>Mission</h2>
+    <p>To protect the public by safekeeping and reforming persons deprived of liberty (PDLs) through responsive and efficient rehabilitation programs.</p>
+
+    <h2>Vision</h2>
+    <p>A modernized and professional corrections system that promotes the reformation of PDLs and their reintegration into society as law-abiding citizens.</p>
+
+    <h2>Core Values</h2>
+    <ul>
+      <li>Integrity</li>
+      <li>Accountability</li>
+      <li>Respect for Human Rights</li>
+      <li>Professionalism</li>
+      <li>Service Excellence</li>
+    </ul>
+
+    <p class="hotline">📞 Maaari rin kayong tumawag o mag-text sa: <strong>0917-123-4567</strong></p>
+  </section>
+
+  <main>
+    <form id="reportForm">
+      <label for="fullname">Pangalan:</label>
+      <input type="text" id="fullname" name="fullname" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Paksa:</label>
+      <input type="text" id="subject" name="subject" required />
+
+      <label for="message">Detalye ng Sumbong:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <label for="evidence">Mag-upload ng larawan bilang ebidensya (optional):</label>
+      <input type="file" id="evidence" name="evidence" accept="image/*" />
+
+      <button type="submit">Isumite ang Sumbong</button>
+    </form>
+
+    <div id="confirmation" class="hidden">
+      <h2>Salamat!</h2>
+      <p>Matatanggap ng BuCor ang inyong sumbong at ito ay verifikado ng aming action center.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Bureau of Corrections. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
