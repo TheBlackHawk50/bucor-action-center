@@ -2,70 +2,72 @@
 <html lang="tl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BuCor Action Center</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background-overlay">
-    <img src="mandela.jpg" class="bg-mandela" alt="Nelson Mandela" />
-  </div>
-
-  <header>
-    <img src="bucor-logo.png" alt="BuCor Logo" class="logo" />
+  <header class="site-header">
     <h1>BuCor Action Center</h1>
-    <p>Isumbong ang inyong mga concern tungkol sa BuCor</p>
+    <p class="tagline">Isumbong nang direkta ang inyong mga concern sa Bureau of Corrections</p>
   </header>
 
-  <section class="mission-section">
-    <h2>Mission</h2>
-    <p>To protect the public by safekeeping and reforming persons deprived of liberty (PDLs) through responsive and efficient rehabilitation programs.</p>
-
+  <!-- Mission ‑ Vision ‑ Core Values -->
+  <section class="mv-section">
     <h2>Vision</h2>
-    <p>A modernized and professional corrections system that promotes the reformation of PDLs and their reintegration into society as law-abiding citizens.</p>
+    <p>
+      “By 2040, BuCor will be a highly efficient and competent correctional service
+      institution that is relevant, sustainable and respected which provides effective
+      safekeeping and holistic reformation programs, in observance of domestic and
+      international standards.”
+    </p>
+
+    <h2>Mission</h2>
+    <p>
+      “To contribute for the protection of the society through effective safekeeping
+      measures and implementation of holistic reformation programs to PDL, thereby
+      enabling them to reintegrate into the mainstream society as law‑abiding citizens.”
+    </p>
 
     <h2>Core Values</h2>
-    <ul>
-      <li>Integrity</li>
-      <li>Accountability</li>
-      <li>Respect for Human Rights</li>
-      <li>Professionalism</li>
-      <li>Service Excellence</li>
+    <ul class="core-values">
+      <li><strong>God‑Centered –</strong> Center our lives joyfully and dynamically upon the person of God.</li>
+      <li><strong>Integrity –</strong> Promote accountability, equity, and inclusiveness by adhering to high ethical and moral standards.</li>
+      <li><strong>Vigilance –</strong> Enhance public safety by being responsive to the extreme demands of corrections duties.</li>
+      <li><strong>Innovativeness –</strong> Seek continuing advancement in corrections management and embrace technological advances to face emerging challenges and optimize resources.</li>
     </ul>
-
-    <p class="hotline">📞 Maaari rin kayong tumawag o mag-text sa: <strong>0917-123-4567</strong></p>
   </section>
 
-  <main>
-    <form id="reportForm">
-      <label for="fullname">Pangalan:</label>
-      <input type="text" id="fullname" name="fullname" required />
+  <!-- Feedback / Reklamo form -->
+  <main class="form-wrapper">
+    <h2>I‑submit ang Iyong Reklamo</h2>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+    <!-- ❶  Replace the action URL with your actual Formspree or backend endpoint -->
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label>Pangalan</label>
+      <input type="text" name="pangalan" required />
 
-      <label for="subject">Paksa:</label>
-      <input type="text" id="subject" name="subject" required />
+      <label>Email (required)</label>
+      <input type="email" name="email" required />
 
-      <label for="message">Detalye ng Sumbong:</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+      <label>Kategorya</label>
+      <select name="kategorya" required>
+        <option value="">— Piliin —</option>
+        <option>Pangaabuso</option>
+        <option>Korapsyon</option>
+        <option>Kalusugan</option>
+        <option>Iba pa</option>
+      </select>
 
-      <label for="evidence">Mag-upload ng larawan bilang ebidensya (optional):</label>
-      <input type="file" id="evidence" name="evidence" accept="image/*" />
+      <label>Detalye ng Reklamo</label>
+      <textarea name="detalye" rows="5" required></textarea>
 
-      <button type="submit">Isumite ang Sumbong</button>
+      <button type="submit">Isumite</button>
     </form>
-
-    <div id="confirmation" class="hidden">
-      <h2>Salamat!</h2>
-      <p>Matatanggap ng BuCor ang inyong sumbong at ito ay verifikado ng aming action center.</p>
-    </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Bureau of Corrections. All rights reserved.</p>
+  <footer class="site-footer">
+    &copy; 2025 Bureau of Corrections • All rights reserved
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>

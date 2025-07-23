@@ -1,113 +1,113 @@
-body {
-  font-family: Arial, sans-serif;
+/* -----  GLOBAL  ----- */
+:root {
+  --bucor-green: #1e6d2e;
+  --light-green: #e7f5e9;
+  --gold: #ffd54f;
+}
+
+* {
   margin: 0;
-  background-color: #f2f2f2;
-  color: #333;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #2e3b55;
-  color: #fff;
-  padding: 20px;
+body {
+  background: linear-gradient(180deg, var(--bucor-green) 0%, var(--light-green) 45%, #ffffff 100%);
+  background-attachment: fixed;
+  color: #222;
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+/* -----  HEADER  ----- */
+.site-header {
   text-align: center;
+  padding: 40px 20px;
+  color: #fff;
 }
 
-main {
-  max-width: 600px;
-  margin: 30px auto;
+.site-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+/* -----  MISSION / VISION  ----- */
+.mv-section {
   background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.mv-section h2 {
+  color: var(--bucor-green);
+  margin-top: 20px;
+}
+
+.core-values {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+/* -----  FORM  ----- */
+.form-wrapper {
+  background: var(--light-green);
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.form-wrapper h2 {
+  text-align: center;
+  color: var(--bucor-green);
+  margin-bottom: 15px;
 }
 
 label {
+  font-weight: 600;
+  margin-top: 12px;
   display: block;
-  margin-top: 15px;
 }
 
-input, textarea {
+input, select, textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-top: 4px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 6px;
+  font-size: 1rem;
 }
 
 button {
-  margin-top: 20px;
-  background-color: #2e3b55;
-  color: white;
-  border: none;
+  display: block;
+  width: 100%;
+  margin-top: 18px;
   padding: 12px;
+  background: var(--gold);
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
   cursor: pointer;
-  border-radius: 5px;
+  transition: background 0.2s;
 }
 
 button:hover {
-  background-color: #3e4a68;
+  background: #ffce28;
 }
 
-footer {
+/* -----  FOOTER  ----- */
+.site-footer {
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
-  background-color: #ddd;
   margin-top: 40px;
-}
-
-.hidden {
-  display: none;
-}
-
-.logo {
-  width: 100px;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.mission-section {
-  background-color: #ffffffd9;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 20px auto;
-  max-width: 600px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.mission-section h2 {
-  margin-top: 20px;
-  color: #2e3b55;
-}
-
-.mission-section ul {
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.background-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  z-index: -1;
-  opacity: 0.08;
-}
-
-.bg-mandela {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-}
-
-
-.hotline {
-  margin-top: 20px;
-  font-size: 1.1em;
-  color: #111;
-  background-color: #fef6e4;
-  padding: 10px;
-  border-left: 5px solid #f4b400;
-  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #444;
 }
